@@ -1,0 +1,15 @@
+/* Displays an arrow (triangle) before/after a dom element with a 'div' class */
+.div::before { /* or after */
+    display: block;
+    content: '';
+    transform: rotateZ(45deg);
+    background: linear-gradient(
+        135deg, /* orientation */
+        white 0%, /* change color instantly (instead of fading) */
+        white 50%, 
+        transparent 50%, 
+        transparent 100%
+    );
+    width: 10px;
+    height: 10px;
+}

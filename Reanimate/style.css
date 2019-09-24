@@ -1,0 +1,18 @@
+.Reanimate {
+    animation: reanimate .1s;
+}
+
+/* Plays an insignificant animation to trigger component update in React component */
+@keyframes reanimate {
+    from 
+    {
+        /* Alteration */
+        transform: translateX(.00001px);
+    } 
+    
+    to 
+    {
+        /* Initial state */
+        transform: translateX(0);
+    }
+}
